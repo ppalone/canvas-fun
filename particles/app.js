@@ -82,10 +82,9 @@ function animate() {
     for (let j = 0; j < PARTICLES_SIZE; j++) {
       if (Math.abs(particles[i].x - particles[j].x) <= DISTANCE && Math.abs(particles[i].y - particles[j].y) <= DISTANCE) {
         ctx.beginPath();
-        ctx.beginPath
-				ctx.strokeStyle = 'rgba(255, 255, 255, 0.20)';
-				ctx.moveTo(particles[i].x, particles[i].y);
-				ctx.lineTo(particles[j].x, particles[j].y);
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.20)';
+        ctx.moveTo(particles[i].x, particles[i].y);
+        ctx.lineTo(particles[j].x, particles[j].y);
         ctx.stroke();
       }
     }
